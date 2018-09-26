@@ -1,6 +1,7 @@
 ## Escuela Colombiana de Ingeniería
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/f7e445484f3a4fd88c0f4825c38b8369)](https://app.codacy.com/app/dracken1/parcial12018?utm_source=github.com&utm_medium=referral&utm_content=dracken1/parcial12018&utm_campaign=Badge_Grade_Dashboard)
+[![CircleCI](https://circleci.com/gh/dracken1/parcial12018/tree/master.svg?style=svg)](https://circleci.com/gh/dracken1/parcial12018/tree/master)
 
 ## Procesos de desarrollo de Software – PDSW
 ## Parcial Práctico - 1er Tercio
