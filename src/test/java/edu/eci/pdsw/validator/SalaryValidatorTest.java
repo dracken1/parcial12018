@@ -27,24 +27,29 @@ public class SalaryValidatorTest {
 	public void validateTest() {		
 		qt()
 		.forAll(employeeGenerator.employees())
-		.check( employee ->{
-			validator.validate(employee);
-			if(validator.validate(employee).get() == ErrorType.INVALID_EPS_AFFILIATION) {
+		.check( employee ->{			
+			if(validator.validate(employee).get().equals(ErrorType.INVALID_EPS_AFFILIATION)) {
+				System.out.println("Falla, entra if 1");
 				return false;
 			}
-			else if(validator.validate(employee).get() == ErrorType.INVALID_ID) {
+			else if(validator.validate(employee).get().equals(ErrorType.INVALID_ID)) {
+				System.out.println("Falla, entra if 2");
 				return false;
 			}
-			else if(validator.validate(employee).get() == ErrorType.INVALID_PREPAGADA_AFILIATION) {
+			else if(validator.validate(employee).get().equals(ErrorType.INVALID_PREPAGADA_AFILIATION)) {
+				System.out.println("Falla, entra if 3");
 				return false;
 			}
-			else if(validator.validate(employee).get() == ErrorType.INVALID_SISBEN_AFFILIATION) {
+			else if(validator.validate(employee).get().equals(ErrorType.INVALID_SISBEN_AFFILIATION)) {
+				System.out.println("Falla, entra if 4");
 				return false;
 			}
-			else if(validator.validate(employee).get() == ErrorType.INVALID_SALARY) {
+			else if(validator.validate(employee).get().equals(ErrorType.INVALID_SALARY)) {
+				System.out.println("Falla, entra if 5");
 				return false;
 			}
 			else {
+				System.out.println("Success!");
 				return true;
 			}			
 		});

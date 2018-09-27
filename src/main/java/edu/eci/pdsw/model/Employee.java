@@ -79,8 +79,8 @@ public class Employee {
 	
 	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
-		return super.toString();
+		String employee = "personId = "+ personId +", Salary = "+ salary + ", socialSecurityType = "+ socialSecurityType;
+		return employee;
 	}
 
 }
