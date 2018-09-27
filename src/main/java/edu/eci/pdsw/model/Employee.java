@@ -10,7 +10,10 @@ public class Employee {
 	private long salary;
 	/** The employee social security type. */
 	private SocialSecurityType socialSecurityType;
-
+	/**The employee first name	 */
+	//private String firstName;
+	/**The employee first name	 */
+	//private String lastName;
 	/**
 	 * Default class constructor
 	 */
@@ -26,6 +29,7 @@ public class Employee {
 	 * @param socialSecurityType the social security type
 	 */
 	public Employee(int personId, long salary, SocialSecurityType socialSecurityType) {
+		
 		this.personId = personId;
 		this.salary = salary;
 		this.socialSecurityType = socialSecurityType;
@@ -71,6 +75,12 @@ public class Employee {
 	 */
 	public void setSocialSecurityType(SocialSecurityType socialSecurityType) {
 		this.socialSecurityType = socialSecurityType;
+	}	
+	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return super.toString();
 	}
 
 }

@@ -17,6 +17,5 @@ public interface EmployeeValidator {
 	 * @return An optional with a possible error type, or
 	 *         {@linkplain Optional#empty()} if no error is found
 	 */
-	Optional<ErrorType> validate(Employee employee);
-
+	Optional<ErrorType> validate(Employee employee);		
 }
